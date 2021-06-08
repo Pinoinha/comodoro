@@ -1,5 +1,9 @@
 #include "pomodoro.h"
 
+// TODO
+// Implement timer_* functions
+// Implement list_timers function
+
 void 
 timer_start(int duration) 
 {
@@ -27,4 +31,17 @@ counter(int duration)
 {
 	sleep(duration);
 	timer_stop();
+}
+void
+list_timers() {
+	return;
+}
+
+int 
+main(int argc, char* argv[])
+{
+	/* EXAMPLE: getting arguments from command line*/
+	if (argc == 2 && strcmp("list", argv[1]))
+		list_timers();
+	return 0;
 }
