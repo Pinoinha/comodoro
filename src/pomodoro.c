@@ -1,8 +1,18 @@
+#include <stdio.h>
+#include <time.h>
+
 #include "pomodoro.h"
 
 // TODO
 // Implement timer_* functions
 // Implement list_timers function
+
+struct pomodoro {
+	time_t start;
+	time_t end;
+
+	int diff;
+};
 
 void 
 timer_start(int duration) 
